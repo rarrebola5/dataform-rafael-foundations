@@ -1,0 +1,21 @@
+config {
+    type: "table",
+    database: constants.pj_dwh,
+    name: "dwh__fact__bigquery_job",
+    columns: {
+        user_email: "The email of the user who has executed the query"
+    },
+    //Dummy test that will fail the assertion if the user is not the dataform service account
+    assertions: {
+      uniqueKey: ["user_email"]
+    }
+}
+  
+SELECT
+  creation_time,
+  user_email,
+  total_bytes_billed,
+FROM
+  ${ref("raw__information_schema__jobs_by_folder")}
+
+

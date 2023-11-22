@@ -1,0 +1,17 @@
+config {
+    type: "declaration",
+    database: constants.pj_orch,
+    schema: "region-eu.INFORMATION_SCHEMA",
+    name: "JOBS_BY_USER",
+    description: "It contains system-defined views that provide metadata information about your BigQuery objects",
+}
+
+  -- TO SPECIFY ALL THE CORRECT ENVIRONMENTS
+  -- -> ingestion only on prd: "{{cookiecutter.__project_id_landing_zone_prd}}"
+  -- -> ingestion on dev and prd: "{{'pj-df-raf1-df-raw-'+target.name if target.name in ['dev','prd'] else 'pj-df-raf1-df-raw'}}"
+  -- -> ingestion on dev acc and prd: "{{'pj-df-raf1-df-raw-'+target.name if target.name in ['dev','acc','prd'] else 'pj-df-raf1-df-raw'}}"
+  -- SOURCE NAMING CONVENTION
+  -- <loader>__<database>__<schema>
+  -- e.g. fivetran__sales_db__dbo
+  -- if the loader, database or schema has a space in the name, replace it with a single '_'
+  -- if there is no schema you don't need to provide it
