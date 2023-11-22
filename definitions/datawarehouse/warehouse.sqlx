@@ -7,7 +7,7 @@ config {
     },
     //Dummy test that will fail the assertion if the user is not the dataform service account
     assertions: {
-      uniqueKey: ["user_email"]
+      nonNull: ["user_email"]
     }
 }
   
