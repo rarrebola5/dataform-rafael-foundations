@@ -3,6 +3,10 @@
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "pj-df-raf1-df-orch-dev",
-  "defaultLocation": "EU"
+  "defaultLocation": "EU",
+  "vars": {
+    "executionSetting": "dev",
+    "base_pj_id": "pj-df-raf1-df"
+  }
 }
     
