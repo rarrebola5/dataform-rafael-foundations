@@ -1,0 +1,10 @@
+config {
+    type: "declaration",
+    database: constants.pj_orch,
+    schema: "region-eu.INFORMATION_SCHEMA",
+    description: "It contains system-defined views that provide metadata information about your BigQuery objects",
+}
+
+  -- SOURCE NAMING CONVENTION
+  -- <loader>__<database>__<schema>
+  -- e.g. fivetran__sales_db__dbo

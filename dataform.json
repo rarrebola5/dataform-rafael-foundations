@@ -2,11 +2,12 @@
   "defaultSchema": "dataform",
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
-  "defaultDatabase": "pj-df-raf1-df-orch-dev",
+  "defaultDatabase": "pj-r56-orch-dev",
   "defaultLocation": "EU",
+
   "vars": {
     "executionSetting": "dev",
-    "base_pj_id": "pj-df-raf1-df"
+    "base_pj_id": "pj-r56"
   }
 }
     
