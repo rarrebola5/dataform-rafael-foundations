@@ -1,8 +1,8 @@
-const pj_orch = dataform.projectConfig.vars.base_pj_id + '-orch-' + dataform.projectConfig.vars.executionSetting;
-const pj_lz   = dataform.projectConfig.vars.base_pj_id + '-lz-'   + dataform.projectConfig.vars.executionSetting;
-const pj_raw  = dataform.projectConfig.vars.base_pj_id + '-raw-'  + dataform.projectConfig.vars.executionSetting;
-const pj_dwh  = dataform.projectConfig.vars.base_pj_id + '-dwh-'  + dataform.projectConfig.vars.executionSetting;
-const pj_dm   = dataform.projectConfig.vars.base_pj_id + '-dm-'   + dataform.projectConfig.vars.executionSetting;
+const pj_orch = dataform.projectConfig.vars.base_pj_ord + '-' + dataform.projectConfig.vars.executionSetting;
+const pj_lz   = dataform.projectConfig.vars.base_pj_lz  + '-' + dataform.projectConfig.vars.executionSetting;
+const pj_raw  = dataform.projectConfig.vars.base_pj_raw + '-' + dataform.projectConfig.vars.executionSetting;
+const pj_dwh  = dataform.projectConfig.vars.base_pj_dwh + '-' + dataform.projectConfig.vars.executionSetting;
+const pj_dm   = dataform.projectConfig.vars.base_pj_dm  + '-' + dataform.projectConfig.vars.executionSetting;
 
 module.exports = {
     pj_orch,
